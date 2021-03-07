@@ -19,18 +19,18 @@ def main(context):
 		'TotalAmount': context['total'],         # 商品金額
 		'TradeDesc': '訂單測試',      # 商品描述
 		'ItemName': context['class_serial'],#'商品1#商品2',    # 商品名稱，用井字號當分行
-		'ReturnURL': 'https://ecpay7.herokuapp.com/catalog/homepage/end_return', # 顧客填完付款資料後的跳轉頁面https://www.ecpay.com.tw/return_url.php
+		'ReturnURL': 'https://ecpay7.herokuapp.com/catalog/ecpay/end_return', # 顧客填完付款資料後的跳轉頁面https://www.ecpay.com.tw/return_url.php
 		'ChoosePayment': 'ALL',      # 顧客的付費方式
         
         # 結帳後，先導到 OrderResultURL，從綠界頁面跳回的頁面
         # 如果沒有參數才會跳轉到 ClientBackURL
-		'ClientBackURL': 'https://ecpay7.herokuapp.com/catalog/homepage/end_page',#https://ecpay3.herokuapp.com/catalog/ecpay/end_page
+		'ClientBackURL': 'https://ecpay7.herokuapp.com/catalog/ecpay/end_page',#https://ecpay3.herokuapp.com/catalog/ecpay/end_page
 		'ItemURL': 'https://www.ecpay.com.tw/item_url.php',     # 商品資訊頁面
 		'Remark': '交易備註',         # 備註文字
 		'ChooseSubPayment': '',
         
         # 結帳成功/失敗後的結果頁面，告知顧客本次的結帳結果
-        'OrderResultURL': 'https://ecpay7.herokuapp.com/catalog/homepage/end_page', #https://www.ecpay.com.tw/order_result_url.php
+        'OrderResultURL': 'https://ecpay7.herokuapp.com/catalog/ecpay/end_page', #https://www.ecpay.com.tw/order_result_url.php
 		'NeedExtraPaidInfo': 'Y',
 		'DeviceSource': '',
 		'IgnorePayment': '',
